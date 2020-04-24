@@ -1,3 +1,31 @@
+Prebuild
+==================================
+- 2020-04-20
+
+```ruby
+BashShell $     tree -L 3 build
+
+build
+├── arm64-v8a
+│   ├── bin
+│   │   ├── assimpd
+│   │   ├── libassimpd.so
+│   │   └── libzlibd.so
+│   ├── include
+│   │   └── assimp
+│   ├── lib
+│   │   ├── libIrrXMLd.a
+│   │   ├── libandroid_jniiosystemd.a
+│   │   └── libzlibstaticd.a
+├── x86_64
+├── x86
+├── armeabi-v7a
+├── armeabi-v7a with NEON
+```
+
+
+
+
 Open Asset Import Library (assimp)
 ==================================
 A library to import and export various 3d-model-formats including scene-post-processing to generate missing render data.

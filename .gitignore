@@ -1,7 +1,53 @@
 .idea
-build
+build/*
+!build/make_android_on_osx.sh
+!build/prebuild_v5.0.1_for_android.7z
+!build/arm*
+build/arm*/*
+!build/arm*/bin
+!build/arm*/lib
+!build/arm*/include
+!build/arm*/contrib
+build/arm*/contrib/zlib/*
+!build/arm*/contrib/zlib/*.a
+!build/arm*/contrib/zlib/*.so
+build/arm*/contrib/irrXML/*
+!build/arm*/contrib/irrXML/*.a
+!build/arm*/contrib/irrXML/*.so
+!build/arm*/port
+!build/arm*/port/AndroidJNI
+build/arm*/port/AndroidJNI/*
+!build/arm*/port/AndroidJNI/*.a
+!build/arm*/port/AndroidJNI/*.so
+!build/arm*/code
+!build/arm*/code/*.so
+!build/arm*/tools
+!build/x86*
+build/x86*/*
+!build/x86*/bin
+!build/x86*/lib
+!build/x86*/include
+!build/x86*/contrib
+build/x86*/contrib/zlib/*
+!build/x86*/contrib/zlib/*.a
+!build/x86*/contrib/zlib/*.so
+build/x86*/contrib/irrXML/*
+!build/x86*/contrib/irrXML/*.a
+!build/x86*/contrib/irrXML/*.so
+!build/x86*/port/AndroidJNI
+build/x86*/port/AndroidJNI/*
+!build/x86*/port/AndroidJNI/*.a
+!build/x86*/port/AndroidJNI/*.so
+!build/x86*/code
+!build/x86*/code/*.so
+!build/x86*/tools
 .project
 *.kdev4*
+.DS_Store
+
+# build artefacts
+*.o
+#*.a
 
 # Visual Studio
 *.sln
@@ -15,8 +61,8 @@ build
 *.ipch
 
 # Output
-bin/
-lib/
+#bin/
+#lib/
 
 # QtCreator
 CMakeLists.txt.user
